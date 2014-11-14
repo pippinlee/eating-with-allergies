@@ -107,7 +107,13 @@ aside select {
   color: #fff;
 }
 
-
+.add1, .add2, .add3, .add4, .add5, .add6, .add7, .add8, .removeall {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-right: 10px
+}
 
 
 
