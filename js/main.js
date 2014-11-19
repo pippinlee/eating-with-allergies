@@ -55,6 +55,10 @@ $(function() {
   var all = L.layerGroup([treenut, mustard, soy, shellfish, wheat, peanut, dairy]);
 
   map.addLayer( all );
+  
+  $('#circle').click(function(){
+    console.log('close');
+  });
 
   $('#addAllergy').click(function(){
     $('<select name="food"><option disabled selected> -- select an option -- </option><option value="treenut">Tree nuts</option><option value="peanut">Peanuts</option><option value="dairy">Dairy</option><option value="shellfish">Shellfish</option></option><option value="mustard">Mustard</option><option value="soy">Soy</option><option value="wheat">Wheat</option></select>').appendTo("section");
@@ -66,54 +70,54 @@ $(function() {
         //console.log(selectedItem);
         //map.addLayer( selectedItem );
         //console.log(element);
+        // console.log(element);
+        console.log(element);
 
         // if value of dropdown is for treenuts
         if( selectedItem === "treenut" ){
           map.removeLayer( treenut );
-          console.log("treeeeeeeenuuuuttttt");
+          console.log("treenuts selected");
         }
 
         // if value of dropdown is for peanuts
         if( selectedItem === "peanut" ){
           map.removeLayer( peanut );
-          console.log('pppppeeeeeaaaaannnnnnuuuuuttt');
+          console.log('peanuts selected');
         }
 
         // if value of dropdown is for dairy
         if( selectedItem === "dairy" ){
           map.removeLayer( dairy );
-          console.log('daaaaaaiiiiirrrryyyy');
+          console.log('diary selected');
         }
 
         // if value of dropdown is for shellfish
         if( selectedItem === "shellfish" ){
           map.removeLayer( shellfish );
-          console.log('sheeeeeeellllllfffffiiiisssshh');
+          console.log('shellfish selected');
         }
 
         // if value of dropdown is for mustard
         if( selectedItem === "mustard" ){
           map.removeLayer( mustard );
-          console.log('muuuuuussssttttaaaaarrrd');
+          console.log('mustard selected');
         }
 
         // if value of dropdown is for soy
         if( selectedItem === "soy" ){
           map.removeLayer( soy );
-          console.log('sssssssoooooooyyyyyy');
+          console.log('soy selected');
         }
 
         // if value of dropdown is for wheat
         if( selectedItem === "wheat" ){
           map.removeLayer( wheat );
-          console.log('wwwhhhheeeaaattt');
+          console.log('wheat selected');
         }
-
-
-
       }
     });
   });
+
 
 
 });
